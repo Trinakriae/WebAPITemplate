@@ -1,0 +1,4 @@
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csprojAssemblyReference.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csproj.CoreCompileInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfoInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfo.cs

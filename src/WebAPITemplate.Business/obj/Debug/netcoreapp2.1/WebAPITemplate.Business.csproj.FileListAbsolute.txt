@@ -1,0 +1,6 @@
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.csprojAssemblyReference.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.csproj.CoreCompileInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorAssemblyInfo.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorAssemblyInfo.cs
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfoInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfo.cs

@@ -1,0 +1,17 @@
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.Test.deps.json
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.Test.runtimeconfig.json
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.Test.runtimeconfig.dev.json
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.Test.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.Test.pdb
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\bin\Debug\netcoreapp2.1\GNB.Business.pdb
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.csprojAssemblyReference.cache
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.csproj.CoreCompileInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.AssemblyInfoInputs.cache
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.AssemblyInfo.cs
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.csproj.CopyComplete
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.dll
+C:\Users\Francesco.Sciuto\Workspace\GNB\src\GNB.Business.Test\obj\Debug\netcoreapp2.1\GNB.Business.Test.pdb
