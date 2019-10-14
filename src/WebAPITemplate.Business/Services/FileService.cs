@@ -1,9 +1,9 @@
 ﻿using WebAPITemplate.Business.Interfaces;
 using WebAPITemplate.Business.Models;
-using WebAPITemplate.Business.Utils;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
+using WebAPITemplate.Shared.Utils;
 
 namespace WebAPITemplate.Business.Services
 {
@@ -15,36 +15,19 @@ namespace WebAPITemplate.Business.Services
             _hostingEnvironment = hostingEnvironment;
         }
 
-        public void SaveTransactions(IEnumerable<BusinessTransaction> transactions)
+        public void SaveProducts(IEnumerable<Product> products)
         {
             try
             {
                 string path = $"{_hostingEnvironment.ContentRootPath }\\Data";
-                string fileName = $"{DateTime.Now.ToString("yyyyMMddTHHmmss")}-transactions.json";
+                string fileName = $"{DateTime.UtcNow.ToString("yyyyMMddTHHmmss")}-transactions.json";
 
-                FileUtils.WriteJSONFile(path, fileName, transactions);
+                FileUtils.WriteJSONFile(path, fileName, products);
             }
             catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-
-        public void SaveRates(IEnumerable<ConversionRate> rates)
-        {
-            try
-            {
-                string path = $"{_hostingEnvironment.ContentRootPath }\\Data";
-                string fileName = $"{DateTime.Now.ToString("yyyyMMddTHHmmss")}-rates.json";
-
-                FileUtils.WriteJSONFile(path, fileName, rates);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        
     }
 }

@@ -11,7 +11,6 @@ using Microsoft.Extensions.Logging;
 
 namespace WebAPITemplate.Business.Controllers
 {
-    //FINISHED
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
@@ -29,9 +28,9 @@ namespace WebAPITemplate.Business.Controllers
             _persistenceService = persistenceService;
         }
 
-        // GET: api/products/transactions
-        [HttpGet("transactions")]
-        public async Task<IActionResult> GetTransactions()
+        // GET: api/products
+        [HttpGet]
+        public async Task<IActionResult> GetProducts()
         {
             try
             {
@@ -46,8 +45,8 @@ namespace WebAPITemplate.Business.Controllers
             }
         }
 
-        // GET: api/products/total/T2006
-        [HttpGet("total/{SKU}")]
+        // GET: api/products/total
+        [HttpGet("total")]
         public async Task<IActionResult> GetProductsValue()
         {
             try
@@ -59,11 +58,11 @@ namespace WebAPITemplate.Business.Controllers
                 }
 
 
-                return Ok(_calculatorService.ComputeTotalTransactionValueByCurrency(products, CurrencyCode.EUR));
+                return Ok(_calculatorService.ComputeTotalProductsValueByCurrency(products, CurrencyCode.EUR));
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Peticion erronea");
+                _logger.LogError(ex, "An error occurred");
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }

@@ -7,3 +7,11 @@ C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Shared\b
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.csprojAssemblyReference.cache
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.dll
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.deps.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.csproj.CoreCompileInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.AssemblyInfoInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.AssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Shared\obj\Debug\netcoreapp2.1\WebAPITemplate.Shared.pdb

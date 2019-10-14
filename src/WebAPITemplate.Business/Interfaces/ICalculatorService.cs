@@ -6,6 +6,6 @@ namespace WebAPITemplate.Business.Interfaces
 {
     public interface ICalculatorService
     {
-        decimal ComputeTotalTransactionValueByCurrency(IEnumerable<Product> products, CurrencyCode currencyCode);
+        decimal ComputeTotalProductsValueByCurrency(IEnumerable<Product> products, CurrencyCode currencyCode);
     }
 }

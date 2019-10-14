@@ -2,3 +2,22 @@ C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csproj.CoreCompileInputs.cache
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfoInputs.cache
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.deps.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.runtimeconfig.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.runtimeconfig.dev.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csprojAssemblyReference.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csproj.CoreCompileInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfoInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.AssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.csproj.CopyComplete
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business.Test\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.Test.pdb

@@ -4,3 +4,20 @@ C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorAssemblyInfo.cs
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfoInputs.cache
 C:\Users\Francesco.Sciuto\Workspace\Web API Template\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.deps.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.runtimeconfig.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.runtimeconfig.dev.json
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Business.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\bin\Debug\netcoreapp2.1\WebAPITemplate.Shared.pdb
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.csprojAssemblyReference.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.csproj.CoreCompileInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorAssemblyInfo.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorAssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfoInputs.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.AssemblyInfo.cs
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.RazorTargetAssemblyInfo.cache
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.csproj.CopyComplete
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.dll
+C:\CICCIO\Workspace\WebAPITemplate\src\WebAPITemplate.Business\obj\Debug\netcoreapp2.1\WebAPITemplate.Business.pdb

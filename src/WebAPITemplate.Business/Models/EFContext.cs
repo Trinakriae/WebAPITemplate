@@ -1,17 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using WebAPITemplate.Business.Models;
 
 namespace WebAPITemplate.b.Models
 {
     public class EFContext : DbContext
     {
         
-        public virtual DbSet<NC> NC { get; set; }
-        public virtual DbSet<NCXTracciaturaStato> NCXTracciaturaStato { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductLine> ProductLine { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["MasterDatabase"];
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["MainDatabase"];
 
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(settings.ConnectionString);
@@ -20,28 +21,31 @@ namespace WebAPITemplate.b.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<NC>(entity =>
+            modelBuilder.Entity<Product>(entity =>
             {
-                entity.ToTable("NC");
+                entity.ToTable("Product");
 
-                entity.Property(e => e.DataAccadimentoEvento).HasColumnType("datetime");
+                entity.HasKey(e => e.Id);
 
-                entity.Property(e => e.IdOrigine).HasColumnName("IdNCXOrigine");
+                entity.Property(e => e.Name).HasMaxLength(50);
 
-                entity.Property(e => e.CodiceAudit).HasMaxLength(50);
-            });
+                entity.Property(e => e.StartDate).HasColumnType("datetime");
 
-            modelBuilder.Entity<NCXTracciaturaStato>(entity =>
-            {
-                entity.ToTable("NCXTracciaturaStato");
-
+                entity.Property(e => e.EndDate).HasColumnType("datetime");
 
                 //Per le navigation properties, EF come convenzione usa come Foreign Key (FK) un campo composto da [nome_tabella_esterna]Id
                 //quindi abbiamo bisogno di creare questo mapping
-                entity.Property(e => e.NCId).HasColumnName("IdNC");
+                entity.Property(e => e.ProductLineId).HasColumnName("IdProductLine");
             });
 
-            modelBuilder.Entity<NC>().HasMany(x => x.NCXTracciaturaStato).WithOne();
+            modelBuilder.Entity<ProductLine>(entity =>
+            {
+                entity.ToTable("ProductLine");
+
+                entity.HasKey(e => e.Id);
+            });
+
+            modelBuilder.Entity<ProductLine>().HasMany(x => x.Products).WithOne();
         }
     }
 }

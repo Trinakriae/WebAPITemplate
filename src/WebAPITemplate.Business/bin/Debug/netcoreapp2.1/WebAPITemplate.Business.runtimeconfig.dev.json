@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Agenzia Sciuto\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Agenzia Sciuto\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

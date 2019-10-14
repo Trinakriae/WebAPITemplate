@@ -728,23 +728,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Francesco.Sciuto\\.nuget\\packages\\": {},
+    "C:\\Users\\Agenzia Sciuto\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
+      "projectUniqueName": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
       "projectName": "WebAPITemplate.Shared",
-      "projectPath": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
-      "packagesPath": "C:\\Users\\Francesco.Sciuto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Shared\\obj\\",
+      "projectPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
+      "packagesPath": "C:\\Users\\Agenzia Sciuto\\.nuget\\packages\\",
+      "outputPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Francesco.Sciuto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Agenzia Sciuto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj": {}
+    "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj": {
+    "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj",
+        "projectUniqueName": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj",
         "projectName": "WebAPITemplate.Business",
-        "projectPath": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj",
-        "packagesPath": "C:\\Users\\Francesco.Sciuto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Francesco.Sciuto\\Workspace\\Web API Template\\src\\WebAPITemplate.Business\\obj\\",
+        "projectPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Business\\WebAPITemplate.Business.csproj",
+        "packagesPath": "C:\\Users\\Agenzia Sciuto\\.nuget\\packages\\",
+        "outputPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Francesco.Sciuto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Agenzia Sciuto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj": {
+                "projectPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -67,6 +71,66 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
+        "projectName": "WebAPITemplate.Shared",
+        "projectPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\WebAPITemplate.Shared.csproj",
+        "packagesPath": "C:\\Users\\Agenzia Sciuto\\.nuget\\packages\\",
+        "outputPath": "C:\\CICCIO\\Workspace\\WebAPITemplate\\src\\WebAPITemplate.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Agenzia Sciuto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [

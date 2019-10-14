@@ -16,6 +16,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebAPITemplate.Shared\WebAPITemplate.Shared.csproj" />
   </ItemGroup>
 
 </Project>

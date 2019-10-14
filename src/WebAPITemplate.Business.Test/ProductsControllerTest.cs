@@ -15,53 +15,51 @@ using System.Threading.Tasks;
 namespace WebAPITemplate.Business.Test
 {
     [TestClass]
-    public class ProductsControllerTest
+    public class ProductControllerTest
     {
-        private readonly Mock<ITransactionsService> _mockTransactionsService;
-        private readonly Mock<IRatesService> _mockRatesService;
+        private readonly Mock<IProductService> _mockProductsService;
         private readonly Mock<ICalculatorService> _mockCalculatorService;
         private readonly Mock<IPersistenceService> _mockPersistenceService;
-        private readonly Mock<ILogger<ProductsController>>  _mockLogger;
+        private readonly Mock<ILogger<ProductController>>  _mockLogger;
 
-        public ProductsControllerTest()
+        public ProductControllerTest()
         {
-            _mockTransactionsService = new Mock<ITransactionsService>();
-            _mockRatesService = new Mock<IRatesService>();
+            _mockProductsService = new Mock<IProductService>();
             _mockCalculatorService = new Mock<ICalculatorService>();
-            _mockLogger = new Mock<ILogger<ProductsController>>();
+            _mockLogger = new Mock<ILogger<ProductController>>();
             _mockPersistenceService = new Mock<IPersistenceService>();
         }
 
         [TestMethod]
-        public async Task ProductsController_GetTransactions_Returns_OKResult_With_Correct_Transactions_ObjectType()
+        public async Task ProductController_GetProducts_Returns_OKResult_With_Correct_Products_ObjectType()
         {
             // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactions()).Returns(Task.FromResult(GetTestData.GetTestTransactions()));
+            _mockProductsService.Setup(p => p.GetProducts()).Returns(Task.FromResult(GetTestData.GetTestProducts()));
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result = await controller.GetTransactions();
+            IActionResult result = await controller.GetProducts();
             ObjectResult objectResult = result as ObjectResult;
 
             // Assert
             Assert.IsNotNull(objectResult);
             Assert.AreEqual(StatusCodes.Status200OK, objectResult.StatusCode);
-            Assert.IsInstanceOfType(objectResult.Value, typeof(IEnumerable<BusinessTransaction>));
+            Assert.IsInstanceOfType(objectResult.Value, typeof(IEnumerable<Product>));
         }
 
         [TestMethod]
-        public async Task ProductsController_GetTransactions_Returns_OKResult_With_Correct_Transactions_Number()
+        public async Task ProductController_GetProducts_Returns_OKResult_With_Correct_Products_Number()
         {
             // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactions()).Returns(Task.FromResult(GetTestData.GetTestTransactions()));
+            _mockProductsService.Setup(p => p.GetProducts()).Returns(Task.FromResult(GetTestData.GetTestProducts()));
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result =  await controller.GetTransactions();
+            IActionResult result =  await controller.GetProducts();
             ObjectResult objectResult = result as ObjectResult;
-            IEnumerable<BusinessTransaction> content = objectResult.Value as IEnumerable<BusinessTransaction>;
+            IEnumerable<Product> content = objectResult.Value as IEnumerable<Product>;
 
             // Assert
             Assert.IsNotNull(objectResult);
@@ -70,15 +68,15 @@ namespace WebAPITemplate.Business.Test
         }
 
         [TestMethod]
-        public async Task ProductsController_GetTransactions_Returns_InternalServerError_When_Exception_Occurs()
+        public async Task ProductController_GetProducts_Returns_InternalServerError_When_Exception_Occurs()
         {
             // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactions()).Throws(new Exception());
+            _mockProductsService.Setup(p => p.GetProducts()).Throws(new Exception());
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object,  _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result = await controller.GetTransactions();
+            IActionResult result = await controller.GetProducts();
             StatusCodeResult statusCodeResult = result as StatusCodeResult;
 
             // Assert
@@ -87,73 +85,18 @@ namespace WebAPITemplate.Business.Test
             Assert.AreEqual(StatusCodes.Status500InternalServerError, statusCodeResult.StatusCode);
         }
 
-        [TestMethod]
-        public async Task ProductsController_GetConversionRates_Returns_OKResult_With_Correct_Rates_ObjectType()
-        {
-            // Arrange
-            _mockRatesService.Setup(p => p.GetConversionRates()).Returns(Task.FromResult(GetTestData.GetTestRates()));
-
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
-
-            // Act
-            IActionResult result = await controller.GetRates();
-            ObjectResult objectResult = result as ObjectResult;
-
-            // Assert
-            Assert.IsNotNull(objectResult);
-            Assert.AreEqual(StatusCodes.Status200OK, objectResult.StatusCode);
-            Assert.IsInstanceOfType(objectResult.Value, typeof(IEnumerable<ConversionRate>));
-        }
 
         [TestMethod]
-        public async Task ProductsController_GetConversionRates_Returns_OKResult_With_Correct_Rates_Number()
+        public async Task ProductController_GetProductsBySKU_Returns_NotFound_When_SKU_Not_Exists()
         {
             // Arrange
-            _mockRatesService.Setup(p => p.GetConversionRates()).Returns(Task.FromResult(GetTestData.GetTestRates()));
+            _mockProductsService.Setup(p => p.GetProductById(It.IsAny<string>()))
+                                .Returns(Task.FromResult(GetTestData.GetTestProducts().Where(t => t.Id == "00000").FirstOrDefault()));
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
-
-            // Act
-            IActionResult result = await controller.GetRates();
-            ObjectResult objectResult = result as ObjectResult;
-            IEnumerable<ConversionRate> content = objectResult.Value as IEnumerable<ConversionRate>;
-
-            // Assert
-            Assert.IsNotNull(objectResult);
-            Assert.AreEqual(StatusCodes.Status200OK, objectResult.StatusCode);
-            Assert.AreEqual(4, content.Count());
-        }
-
-        [TestMethod]
-        public async Task ProductsController_GetRates_Returns_InternalServerError_When_Exception_Occurs()
-        {
-            // Arrange
-            _mockRatesService.Setup(p => p.GetConversionRates()).Throws(new Exception());
-
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result = await controller.GetRates();
-            StatusCodeResult statusCodeResult = result as StatusCodeResult;
-
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(result.GetType(), typeof(StatusCodeResult));
-            Assert.AreEqual(StatusCodes.Status500InternalServerError, statusCodeResult.StatusCode);
-        }
-
-        [TestMethod]
-        public async Task ProductsController_GetTransactionsBySKU_Returns_NotFound_When_SKU_Not_Exists()
-        {
-            // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactionsBySKU(It.IsAny<string>()))
-                                    .Returns(Task.FromResult(GetTestData.GetTestTransactions().Where(t => t.SKU == "00000")));
-            _mockRatesService.Setup(p => p.GetConversionRates()).Returns(Task.FromResult(GetTestData.GetTestRates()));
-
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
-
-            // Act
-            IActionResult result = await controller.GetTotalTransactionValueBySKU("00000");
+            IActionResult result = await controller.GetProductsValue();
             StatusCodeResult statusCodeResult = result as NotFoundResult;
 
             // Assert
@@ -163,15 +106,15 @@ namespace WebAPITemplate.Business.Test
         }
 
         [TestMethod]
-        public async Task ProductsController_GetTransactionsBySKU_Returns_InternalServerError_When_Exception_Occurs()
+        public async Task ProductController_GetProductsBySKU_Returns_InternalServerError_When_Exception_Occurs()
         {
             // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactionsBySKU(It.IsAny<string>())).Throws(new Exception());
+            _mockProductsService.Setup(p => p.GetProductById(It.IsAny<string>())).Throws(new Exception());
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result = await controller.GetTotalTransactionValueBySKU("00000");
+            IActionResult result = await controller.GetProductsValue();
             StatusCodeResult statusCodeResult = result as StatusCodeResult;
 
             // Assert
@@ -181,18 +124,18 @@ namespace WebAPITemplate.Business.Test
         }
 
         [TestMethod]
-        public async Task ProductsController_GetTransactionsBySKU_Returns_OKResult_With_Correct_Total_Amount()
+        public async Task ProductController_GetProductsBySKU_Returns_OKResult_With_Correct_Total_Amount()
         {
             // Arrange
-            _mockTransactionsService.Setup(p => p.GetTransactionsBySKU(It.IsAny<string>()))
-                                    .Returns(Task.FromResult(GetTestData.GetTestTransactions().Where(t => t.SKU == "T2006")));
-            _mockRatesService.Setup(p => p.GetConversionRates()).Returns(Task.FromResult(GetTestData.GetTestRates()));
-            _mockCalculatorService.Setup(p => p.ComputeTotalTransactionValueByCurrency(It.IsAny<IEnumerable<Amount>>(), It.IsAny<IEnumerable<ConversionRate>>(), It.IsAny<CurrencyCode>())).Returns(10.16M);
+            _mockProductsService.Setup(p => p.GetProductById(It.IsAny<string>()))
+                                    .Returns(Task.FromResult(GetTestData.GetTestProducts().Where(t => t.Id == "T2006").FirstOrDefault()));
+ 
+            _mockCalculatorService.Setup(p => p.ComputeTotalProductsValueByCurrency(It.IsAny<IEnumerable<Product>>(), It.IsAny<CurrencyCode>())).Returns(10.16M);
 
-            ProductsController controller = new ProductsController(_mockLogger.Object, _mockTransactionsService.Object, _mockRatesService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
+            ProductController controller = new ProductController(_mockLogger.Object, _mockProductsService.Object, _mockCalculatorService.Object, _mockPersistenceService.Object);
 
             // Act
-            IActionResult result = await controller.GetTotalTransactionValueBySKU("T2006");
+            IActionResult result = await controller.GetProductsValue();
             ObjectResult objectResult = result as ObjectResult;
             decimal? content = objectResult.Value as decimal?;
 

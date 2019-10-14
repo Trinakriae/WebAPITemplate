@@ -13,16 +13,14 @@ namespace WebAPITemplate.Business.Test
     {
 
         [TestMethod]
-        public void CalculatorService_ComputeTotalTransactionValueByCurrency_Returns_Correct_Total_With_Existing_Rates()
+        public void CalculatorService_ComputeTotalProductsValueByCurrency_Returns_Correct_Total_With_Existing_Rates()
         {
             // Arrange
-            IEnumerable<BusinessTransaction> transactions = GetTestData.GetTestTransactions();
-            IEnumerable<ConversionRate> rates = GetTestData.GetTestRates();
+            IEnumerable<Product> products = GetTestData.GetTestProducts();
             CalculatorService calculator = new CalculatorService();
-            IEnumerable<Amount> amounts = transactions.Select(t => new Amount { Value = t.Amount, Currency = t.Currency });
 
             // Act
-            decimal total = calculator.ComputeTotalTransactionValueByCurrency(amounts, rates, CurrencyCode.EUR);
+            decimal total = calculator.ComputeTotalProductsValueByCurrency(products, CurrencyCode.EUR);
 
             //Assert
             Assert.AreEqual(69.13172M, total);
@@ -33,13 +31,12 @@ namespace WebAPITemplate.Business.Test
         public void CalculatorService_ComputeTotalTransactionValueByCurrency_Throws_Exception_When_Missing_Rate()
         {
             // Arrange
-            IEnumerable<BusinessTransaction> transactions = GetTestData.GetTestTransactions();
-            IEnumerable<ConversionRate> rates = GetTestData.GetTestRates();
+            IEnumerable<Product> products = GetTestData.GetTestProducts();
             CalculatorService calculator = new CalculatorService();
-            IEnumerable<Amount> amounts = transactions.Select(t => new Amount { Value = t.Amount, Currency = t.Currency });
+
 
             // Act
-            decimal total = calculator.ComputeTotalTransactionValueByCurrency(amounts, rates, CurrencyCode.TRY);
+            decimal total = calculator.ComputeTotalProductsValueByCurrency(products, CurrencyCode.TRY);
 
             // Assert - Expects exception
         }
